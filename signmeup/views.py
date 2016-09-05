@@ -17,7 +17,7 @@ def post_new(request):
             post = form.save(commit=False)
             write_post_entry.delay(name=post.name, email=post.email)
 	    #return redirect('post_thanks', pk=post.pk)
-	    return redirect('post_thanks', 44)
+	    return redirect('post_thanks', 1)
     else:
         form = PostForm()
     return render(request, 'signmeup/post_add.html', {'form': form})
