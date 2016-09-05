@@ -1,2 +1,5 @@
 *.pyc
 __pycache__
+venv
+__pycache__
+local_settings.py
